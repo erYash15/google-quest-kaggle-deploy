@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form action='/predict' method="POST">
+
+            <h1>Predictive Algorithms for Different Subjective Aspects of Questions-Answers</h1>
+
+            Form is pre-filled with required default data or change them and hit predict button.<br><br>
+
+            question_title(*) = <input type='text' name='question_title' size="100" required value="With Carrierwave and minimagic can I test if the file is imageable?"><br>
+            question_body(*) = <input type='text' name='question_body' size="100" required value="I have a file uploader that is intended to take pdf, rft, txt, doc, docx"><br>
+            question_user_name = <input type='text' name='question_user_name'><br>
+            question_user_page = <input type='text' name='question_user_page'><br>
+            answer(*) = <input type='text' name='answer' size="100" required value="To upload the file and only create a thumbnail when possible you can add a version with conditional processing. Then create a method that checks for valid content types."><br>
+            answer_user_name = <input type='text' name='answer_user_name'><br>
+            answer_user_page = <input type='text' name='answer_user_page'><br>
+            url = <input type='text' name='url'><br>
+            category(*) = <input type='text' name='category' size="50" required value="STACKOVERFLOW"><br>
+            host(*) = <input type='text' name='host' size="50" required value="music.stackexchange.com"><br>
+            <br><br>
+            <b>Predictions for Different Question Answer Based Aspect:</b> {{result|safe}} <br>
+            <br><br>
+            <input type="submit" value="Predict">
+            <br><br>
+        </form>
+    </body>
+</html>
